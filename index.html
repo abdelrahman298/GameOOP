@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="shortcut icon" href="favicon.icon" type="image/x-icon" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -12,6 +20,106 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
+    <!-- Header Section -->
+    <section id="header">
+      <header class="container-fluid">
+        <div class="header-background">
+          <img class="w-100" src="img/wraper.png" alt="header-background" />
+        </div>
+      </header>
+      <div class="navbar-section navBar-background col-md-6 col-lg-9">
+        <nav class="navbar navbar-expand-lg navBar-background px-2">
+          <div class="container navBar-background">
+            <a
+              class="navbar-brand text-white d-flex align-content-center"
+              href="#"
+            >
+              <img
+                src="img/logo-sm.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+              />
+              <span> GAME REVIEWS</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">MMORPG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SHOOTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SAILING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PERMADEATH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SUPERHERO </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PIXEL </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Nav Section -->
+
+    <!-- Main-Home Section -->
+    <main id="home">
+      <div class="container">
+        <div id="homeBody">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card mb-3 border-black main-card-body">
+                <div class="img-container p-3">
+                  <img
+                    src="img/thumbnail.jpg"
+                    class="card-img-top w-100"
+                    alt="image of game"
+                  />
+                </div>
+                <div class="card-body">
+                  <div
+                    class="card-title text-white d-flex justify-content-between"
+                  >
+                    <p id="gameTitle" class="gameTitle">Diablo Immortal</p>
+                    <p id="gameStatus" class="gameStatus">Free</p>
+                  </div>
+                  <p class="card-text text-white text-center">
+                    Built,for,mobile,and,also,released,on,PC,
+                  </p>
+                </div>
+                <div
+                  class="card-footer text-white d-flex justify-content-between border-top border-black"
+                >
+                  <p class="genre">MMOARPG</p>
+                  <p class="platform">PC (Windows)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/ui.games.js"></script>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
