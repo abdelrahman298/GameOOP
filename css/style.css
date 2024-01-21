@@ -1,13 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
 * {
   background-color: #272b30;
   font-family: "Comfortaa", cursive;
 }
 body {
   background-color: #272b30;
+  position: relative;
 }
-.container {
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! dont't forgit to remove the display none */
+#header,
+#home {
+  display: none;
 }
 /* ! Header Style */
+
 #header {
   position: relative;
 }
@@ -62,6 +69,7 @@ nav {
 }
 .nav-item {
   background-color: #3a497b !important;
+  margin-right: 5px;
 }
 /* ! Main-Home Style */
 
@@ -131,4 +139,59 @@ nav {
   background: #32383e;
   border-radius: 5px;
   padding: 3px 5px;
+}
+
+/*!? ///////////////////////////////////////////////////////////////////// */
+/*!? ///////////////////    Game Details Page   ////////////////////////// */
+/*!? ///////////////////////////////////////////////////////////////////// */
+.game-detail-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: inherit;
+  content: "";
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+  padding: 2rem;
+}
+
+.hstack-text {
+  font-size: 2rem;
+  font-family: "Nerko One", cursive;
+  font-weight: 200;
+}
+.hstack-btn {
+  font-size: 1.5rem;
+}
+
+.game-type {
+  background-color: #0dcaf0;
+  display: inline-block;
+  padding: 4px 9px;
+  margin-left: 0.7rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.details-desc-container .details-desc {
+  font-size: 14px;
+}
+
+.show-game-btn {
+  border: 2px solid #ffc107;
+  padding: 0.6rem 1.1rem;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.6s;
+}
+
+.show-game-btn:hover {
+  background-color: #ffc107;
 }

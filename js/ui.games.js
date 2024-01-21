@@ -1,3 +1,5 @@
-// import { displayGame } from "./games.home.js";
+import { dividesGameData } from "./games.home.js";
+import { getGameDataDetail } from "./gameDetails.js";
 
-// displayGame();
+dividesGameData();
+getGameDataDetail();
