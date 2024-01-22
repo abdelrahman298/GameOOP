@@ -1,5 +1,3 @@
-import { dividesGameData } from "./games.home.js";
-import { getGameDataDetail } from "./gameDetails.js";
-
-dividesGameData();
-getGameDataDetail();
+import { getGameDataHomeFromApi } from "./games.home.js";
+getGameDataHomeFromApi("mmorpg");
+// dividesGameData("shooter");

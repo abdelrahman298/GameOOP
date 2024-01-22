@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Header Section -->
-    <section id="header">
+    <section id="header" class="">
       <header class="container-fluid">
         <div class="header-background">
           <img class="w-100" src="img/wraper.png" alt="header-background" />
@@ -58,22 +58,24 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">MMORPG</a>
+                  <a id="MMORPG" class="nav-link" aria-current="page" href="#"
+                    >MMORPG</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SHOOTER</a>
+                  <a id="SHOOTER" class="nav-link" href="#">SHOOTER</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SAILING</a>
+                  <a id="SAILING" class="nav-link" href="#">SAILING</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PERMADEATH</a>
+                  <a id="PERMADEATH" class="nav-link" href="#">PERMADEATH</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SUPERHERO </a>
+                  <a id="SUPERHERO" class="nav-link" href="#">SUPERHERO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PIXEL </a>
+                  <a id="PIXEL" class="nav-link" href="#">PIXEL</a>
                 </li>
               </ul>
             </div>
@@ -83,7 +85,7 @@
     </section>
 
     <!-- Main-Home Section -->
-    <main id="home">
+    <main id="home" class="">
       <div class="container">
         <div id="homeBody">
           <div id="row" class="row">
@@ -122,60 +124,81 @@
     </main>
 
     <!-- Game Details Section -->
-    <section class="game-detail-section">
-      <div class="container">
-        <div class="hstack d-flex justify-content-between mb-5">
-          <h1 class="text-white hstack-text">Details Game</h1>
-          <a class="text-white-50 hstack-btn" href="#"
-            ><i class="fa-solid fa-xmark"></i
-          ></a>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="img-container">
-              <img class="w-100" src="img/thumbnail.jpg" alt="Details Image" />
-            </div>
+    <section id="gameDetailSection" class="game-detail-section d-none">
+      <div id="gameDetailContainer">
+        <!-- <div class="container">
+          <div class="hstack d-flex justify-content-between mb-5">
+            <h1 class="text-white hstack-text">Details Game</h1>
+            <a id="closeBtn" class="text-white-50 hstack-btn" href="#"
+              ><i class="fa-solid fa-xmark"></i
+            ></a>
           </div>
-          <div class="col-sm-8">
-            <div class="game-details-contents text-white gy-3">
-              <h3 class="game-title mb-2">Title: Genshin Impact</h3>
-              <p>Category: <span class="game-type mb-2"> Action RPG</span></p>
-              <p>Platform:<span class="game-type mb-2"> Windows</span></p>
-              <p>Status:<span class="game-type mb-2"> Live</span></p>
-
-              <div class="details-desc-container">
-                <p class="details-desc">
-                  If you’ve been looking for a game to scratch that open-world
-                  ARPG itch, one with perhaps a bit of Asian flair, then you’re
-                  going to want to check out miHoYo’s Genshin Impact. The
-                  developer, known previously for Honkai Impact 3rd, take
-                  players to the world of Teyvat, a vast open-world designed for
-                  extended exploration. Players not only explore dungeons, but
-                  climb mountains, trees, and buildings to discover all kinds of
-                  secrets. Of course, the main character doesn’t travel alone.
-                  Instead, players build a four-player group out of over 20
-                  characters that can be swapped out to create the best group
-                  for any particular mission. The characters, each with
-                  different skills filling out the classic RPG types as well as
-                  distinct elemental focuses, can be obtained via gameplay or
-                  the game’s gacha mechanics – as is gear. Both characters and
-                  gear are upgraded in the game via the in depth crafting
-                  system. In addition, the game offers players an adventurer
-                  system that provides them with even more to do, be it daily
-                  quests, small favors for the locals, or big
-                  continent-traveling quests. The adventurer system also rewards
-                  players for their activities with a wide variety of items.
-                  Genshin Impact is available to players on PC, PlayStation 4,
-                  and mobile devices. It also features a multiplayer mode
-                  allowing up to four players to play together and cross-play
-                  across all four platforms, however, PlayStation 4 does not
-                  allow for cross-progression.
-                </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="img-container">
+                <img
+                  class="w-100"
+                  src="img/thumbnail.jpg"
+                  alt="Details Image"
+                />
               </div>
-              <button id="showGameBtn" class="show-game-btn">Show Game</button>
+            </div>
+            <div class="col-sm-8">
+              <div class="game-details-contents text-white gy-3">
+                <h3 class="game-title mb-2">Title: Genshin Impact</h3>
+                <p>
+                  Category:
+                  <span id="gameCategory" class="game-type mb-2">
+                    Action RPG</span
+                  >
+                </p>
+                <p>
+                  Platform:<span id="gamePlatform" class="game-type mb-2">
+                    Windows</span
+                  >
+                </p>
+                <p>
+                  Status:<span id="gameStatus" class="game-type mb-2">
+                    Live</span
+                  >
+                </p>
+
+                <div class="details-desc-container">
+                  <p class="details-desc">
+                    If you’ve been looking for a game to scratch that open-world
+                    ARPG itch, one with perhaps a bit of Asian flair, then
+                    you’re going to want to check out miHoYo’s Genshin Impact.
+                    The developer, known previously for Honkai Impact 3rd, take
+                    players to the world of Teyvat, a vast open-world designed
+                    for extended exploration. Players not only explore dungeons,
+                    but climb mountains, trees, and buildings to discover all
+                    kinds of secrets. Of course, the main character doesn’t
+                    travel alone. Instead, players build a four-player group out
+                    of over 20 characters that can be swapped out to create the
+                    best group for any particular mission. The characters, each
+                    with different skills filling out the classic RPG types as
+                    well as distinct elemental focuses, can be obtained via
+                    gameplay or the game’s gacha mechanics – as is gear. Both
+                    characters and gear are upgraded in the game via the in
+                    depth crafting system. In addition, the game offers players
+                    an adventurer system that provides them with even more to
+                    do, be it daily quests, small favors for the locals, or big
+                    continent-traveling quests. The adventurer system also
+                    rewards players for their activities with a wide variety of
+                    items. Genshin Impact is available to players on PC,
+                    PlayStation 4, and mobile devices. It also features a
+                    multiplayer mode allowing up to four players to play
+                    together and cross-play across all four platforms, however,
+                    PlayStation 4 does not allow for cross-progression.
+                  </p>
+                </div>
+                <button id="showGameBtn" class="show-game-btn">
+                  Show Game
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <script type="module" src="js/ui.games.js"></script>
