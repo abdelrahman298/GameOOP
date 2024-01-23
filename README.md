@@ -26,4 +26,4 @@ the Project Linke : ( https://abdelrahman298.github.io/GameOOP/ )
 
 - you can visit the other projects:
       -- https://github.com/abdelrahman298/weather-app (weather app to show the weather data of the current day and the next 2 days )
-      -- https://github.com/abdelrahman298/CRUD (A CRUD project that helps you to add the data of any device and its prices)
+      -- https://github.com/abdelrahman298/CRUD (A CRUD project that helps you to add - delete - search and edit a data you have created )
