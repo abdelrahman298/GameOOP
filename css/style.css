@@ -203,3 +203,9 @@ nav {
 .show-game-btn:hover {
   background-color: #ffc107;
 }
+
+.game-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: inherit;
+}

@@ -107,8 +107,8 @@ async function displayGameDetails(game) {
             <p class="details-desc">${GameDetail.description}
             </p>
           </div>
-          <button id="showGameBtn" class="show-game-btn" src='${GameDetail.urlLink}'>
-            Show Game
+          <button id="showGameBtn" class="show-game-btn" >
+          <a class='game-link'  href='${GameDetail.urlLink}' target="_blank">  Show Game </a>
           </button>
         </div>
       </div>
